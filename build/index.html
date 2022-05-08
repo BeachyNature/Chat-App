@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>PictoChat</title>
+  <link href="html_ref/css/index.css" type="text/css" rel="stylesheet" />
+  <link rel="icon" href="html_ref/images/mintIcon.png">
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="html_ref/js/message.js"></script>
+
+</head>
+
+<body>
+  <div id="chat">
+    <div id="chat-win">
+      <ul id="messages"></ul>
+    </div>
+    <form action="">
+      <input id="m" autocomplete="off" /><button>Send</button>
+    </form>
+  </div>
+  <div id="test">
+    <canvas id="canvas" width="500" height="500"></canvas>
+  </div>
+  <div id="test2">
+    <p id="clear">clear</p>
+    <p id="sendPic" onclick="sendPic();">send</p>
+  </div>
+  <script src="html_ref/js/draw.js"></script>
+
+</body>
+
+</html>
